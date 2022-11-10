@@ -51,6 +51,7 @@ p {
   --silver: #cacaca;
   --biloba-flower: #d1a9f0;
   --royal-purple: #7943a4;
+  --dove-gray: #666666;
   --heliotrope: #c283f3;
 }
 
@@ -202,7 +203,7 @@ p {
   bottom: 0px;
   z-index: -1;
   opacity: 0;
-  transition: opacity .4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .header__button::after {
@@ -214,19 +215,17 @@ p {
   height: 13px;
   top: 14px;
   left: 8px;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .header__menu-item:focus::before,
 .header__button:focus::before {
- opacity: 1;
+  opacity: 1;
 }
-
 
 .header__button:hover::after {
   background-image: url(../img/Vector-hover.svg);
   width: 17px;
-
 }
 
 .header__button:active::after {
@@ -245,7 +244,6 @@ p {
 .header__menu-item {
   position: relative;
 }
-
 
 .header__menu-item:focus {
   color: var(--white);
@@ -481,7 +479,7 @@ p {
 .header__menu-item--active .drop-down {
   visibility: visible;
   opacity: 1;
-  transition: opacity .4s ease-in-out, visibility .4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
 
 .header__menu-item--active .header__menu-svg {
@@ -591,7 +589,6 @@ input:focus::-webkit-input-placeholder {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .hero__title {
   margin-bottom: -2px;
@@ -708,7 +705,7 @@ input:focus::-webkit-input-placeholder {
   padding: 3px 14px 5px 16px;
   width: 100%;
   min-height: auto;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white);
   border-radius: 6px;
   background-color: transparent;
 }
@@ -745,7 +742,7 @@ input:focus::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  color: #999;
+  color: var(--dusty-gray);
 }
 .choices__list[aria-expanded] .choices__item {
   padding-left: 20px;
@@ -807,7 +804,7 @@ input:focus::-webkit-input-placeholder {
 .gallery__checkbox-wrap:focus,
 .gallery__checkbox-wrap:focus .gallery__checkbox-choice + label::before {
   border-color: var(--heliotrope);
-  color: #c283f3;
+  color: var(--heliotrope);
   outline: none;
 }
 
@@ -846,7 +843,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .gallery__img {
-width: 100%;
+  width: 100%;
 }
 
 .gallery__picture {
@@ -875,7 +872,7 @@ width: 100%;
   height: 30px;
   cursor: pointer;
   border-radius: 50%;
-  background-color: #666;
+  background-color: var(--dove-gray);
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -885,7 +882,7 @@ width: 100%;
   height: 30px;
   cursor: pointer;
   border-radius: 50%;
-  background-color: #666;
+  background-color: var(--dove-gray);
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -915,14 +912,14 @@ width: 100%;
 
 .gallery__button-next.swiper-button-disabled,
 .gallery__button-prev.swiper-button-disabled {
-  background-color: #cacaca;
+  background-color: var(--silver);
   cursor: auto;
 }
 
 .gallery__button-next:focus,
 .gallery__button-prev:focus {
-  outline: 2px solid #000;
-  background-color: #666;
+  outline: 2px solid var(--black);
+  background-color: var(--dove-gray);
 }
 
 .gallery__button-next:hover,
@@ -932,7 +929,7 @@ width: 100%;
 
 .gallery__button-next:active,
 .gallery__button-prev:active {
-  outline: 2px solid #000;
+  outline: 2px solid var(--black);
   background-color: var(--royal-purple);
 }
 
@@ -1012,7 +1009,7 @@ width: 100%;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #999;
+  color: var(--dusty-gray);
 }
 
 .catalog__text {
@@ -1067,7 +1064,7 @@ width: 100%;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #333333;
+  color: var(--mine-shaft);
   width: 56%;
 }
 
@@ -1421,7 +1418,7 @@ width: 100%;
   right: -6px;
   bottom: 0;
   opacity: 0;
-  transition: opacity .4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .project__text-link:hover {
@@ -1478,7 +1475,7 @@ width: 100%;
   font-size: 12px;
   line-height: 16px;
   color: var(--white);
-  background-color: #999;
+  background-color: var(--dusty-gray);
   transform: translateX(-53%);
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
@@ -1489,7 +1486,7 @@ width: 100%;
   content: "";
   position: absolute;
   border: 5px solid transparent;
-  border-top: 7px solid #999;
+  border-top: 7px solid var(--dusty-gray);
   top: 100%;
   right: 50%;
 }
@@ -1554,7 +1551,7 @@ width: 100%;
   cursor: pointer;
   border-radius: 50%;
   background-color: var(--gallery);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .project__button-prev {
@@ -1567,7 +1564,7 @@ width: 100%;
   cursor: pointer;
   border-radius: 50%;
   background-color: var(--gallery);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .project__button-next::before {
@@ -1648,15 +1645,16 @@ width: 100%;
 
 .showroom__form-name:hover,
 .showroom__form-name:focus {
-  background: #ececec;
+  background: var(--gallery);
   outline: none;
+  color: var(--mine-shaft);
 }
 
 .showroom__form-name::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  color: #999;
+  color: var(--dusty-gray);
 }
 
 .showroom__form-tel {
@@ -1675,12 +1673,12 @@ width: 100%;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  color: #999;
+  color: var(--dusty-gray);
 }
 
 .showroom__form-tel:hover,
 .showroom__form-tel:focus {
-  background: #ececec;
+  background: var(--gallery);
   outline: none;
 }
 
@@ -1700,9 +1698,9 @@ width: 100%;
   border: 2px solid var(--amethyst);
   border-radius: 100px;
   font-weight: 700;
-font-size: 12px;
-line-height: 16px;
-color: var(--amethyst);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--amethyst);
 }
 
 .showroom__button-mobile:active {
@@ -1761,7 +1759,7 @@ color: var(--amethyst);
 
 .showroom__button:hover {
   background-color: var(--amethyst);
-  color: #fff;
+  color: var(--white);
 }
 
 .showroom__button:active::after {
@@ -1839,7 +1837,7 @@ color: var(--amethyst);
 }
 
 .footer__vk-link {
-outline: none;
+  outline: none;
 }
 
 .footer__ok-link {
@@ -1849,7 +1847,7 @@ outline: none;
 
 .footer__vk-link svg,
 .footer__ok-link svg {
-  fill: #cacaca;
+  fill: var(--silver);
   transition: fill 0.3s ease-in-out;
 }
 
