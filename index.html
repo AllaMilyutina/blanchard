@@ -19,6 +19,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"/>
+      <link
+  rel="stylesheet"
+  href="https://unpkg.com/tippy.js@6/animations/scale.css"
+/>
     <link rel="stylesheet" href="./libs/accordion.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
@@ -81,7 +85,7 @@
                 fill="white"/>
             </svg>
           </a>
-          <form class="header__search-2 hidden flex">
+          <form class="header__search-2 flex">
             <button class="header__btn btn">
               <svg
                 width="23"
@@ -141,23 +145,27 @@
                   <path d="M11 1L6 6.00001L0.999997 1" />
                 </svg>
               </button>
-              <ul data-simplebar class="drop-down list-reset">
-                <li class="drop-down__item tintoretto" tabindex="0">
+              <div class="drop-down">
+                <div data-simplebar class="drop-down__simple">
+              <ul class="list-reset">
+                <li class="drop-down__item tintoretto">
                   <a href="" class="drop-down__link">Тинторетто</a>
                 </li>
-                <li class="drop-down__item friedrich" tabindex="0">
+                <li class="drop-down__item friedrich">
                   <a href="" class="drop-down__link">Фридрих</a>
                 </li>
-                <li class="drop-down__item leonardo" tabindex="0">
+                <li class="drop-down__item leonardo">
                   <a href="" class="drop-down__link">Леонардо</a>
                 </li>
-                <li class="drop-down__item verrocchio" tabindex="0">
+                <li class="drop-down__item verrocchio">
                   <a href="" class="drop-down__link">Верроккьо</a>
                 </li>
-                <li class="drop-down__item tintoretto" tabindex="0">
+                <li class="drop-down__item tintoretto">
                   <a href="" class="drop-down__link">Тинторетто</a>
                 </li>
               </ul>
+            </div>
+            </div>
             </li>
             <li class="header__menu-item">
               <button class="btn header__menu-item-text">
@@ -172,20 +180,24 @@
                   <path d="M11 1L6 6.00001L0.999997 1" />
                 </svg>
               </button>
-              <ul data-simplebar class="drop-down list-reset">
-                <li class="drop-down__item monet" tabindex="0">
+              <div class="drop-down">
+                <div data-simplebar class="drop-down__simple">
+              <ul class="list-reset">
+                <li class="drop-down__item monet">
                   <a href="" class="drop-down__link">Моне</a>
                 </li>
-                <li class="drop-down__item sisley" tabindex="0">
+                <li class="drop-down__item sisley">
                   <a href="" class="drop-down__link">Сислей</a>
                 </li>
-                <li class="drop-down__item manet" tabindex="0">
+                <li class="drop-down__item manet">
                   <a href="" class="drop-down__link">Мане</a>
                 </li>
-                <li class="drop-down__item renoir" tabindex="0">
+                <li class="drop-down__item renoir">
                   <a href="" class="drop-down__link">Ренуар</a>
                 </li>
               </ul>
+                </div>
+              </div>
             </li>
             <li class="header__menu-item">
               <button class="btn header__menu-item-text">
@@ -200,20 +212,24 @@
                   <path d="M11 1L6 6.00001L0.999997 1" />
                 </svg>
               </button>
-              <ul data-simplebar class="drop-down list-reset">
-                <li class="drop-down__item vangogh" tabindex="0">
+              <div class="drop-down">
+                <div data-simplebar class="drop-down__simple">
+              <ul class="list-reset">
+                <li class="drop-down__item vangogh">
                   <a href="" class="drop-down__link">Ван Гог</a>
                 </li>
-                <li class="drop-down__item cezanne" tabindex="0">
+                <li class="drop-down__item cezanne">
                   <a href="" class="drop-down__link">Сезанн</a>
                 </li>
-                <li class="drop-down__item gauguin" tabindex="0">
+                <li class="drop-down__item gauguin">
                   <a href="" class="drop-down__link">Гоген</a>
                 </li>
-                <li class="drop-down__item sulfur" tabindex="0">
+                <li class="drop-down__item sulfur">
                   <a href="" class="drop-down__link">Сёра</a>
                 </li>
               </ul>
+                </div>
+              </div>
             </li>
             <li class="header__menu-item">
               <button class="btn header__menu-item-text">
@@ -228,20 +244,24 @@
                   <path d="M11 1L6 6.00001L0.999997 1" />
                 </svg>
               </button>
-              <ul data-simplebar class="drop-down list-reset">
-                <li class="drop-down__item kandinsky" tabindex="0">
+              <div class="drop-down">
+                <div data-simplebar class="drop-down__simple">
+              <ul class="list-reset">
+                <li class="drop-down__item kandinsky">
                   <a href="" class="drop-down__link">Кандинский</a>
                 </li>
                 <li class="drop-down__item marinetti">
-                  <a href="" class="drop-down__link" tabindex="0">Маринетти</a>
+                  <a href="" class="drop-down__link">Маринетти</a>
                 </li>
                 <li class="drop-down__item malevich">
-                  <a href="" class="drop-down__link" tabindex="0">Малевич</a>
+                  <a href="" class="drop-down__link">Малевич</a>
                 </li>
                 <li class="drop-down__item picasso">
-                  <a href="" class="drop-down__link" tabindex="0">Пикассо</a>
+                  <a href="" class="drop-down__link">Пикассо</a>
                 </li>
               </ul>
+                </div>
+              </div>
             </li>
             <li class="header__menu-item">
               <button class="btn header__menu-item-text">
@@ -256,20 +276,24 @@
                   <path d="M11 1L6 6.00001L0.999997 1" />
                 </svg>
               </button>
-              <ul data-simplebar class="drop-down list-reset">
-                <li class="drop-down__item carra" tabindex="0">
+              <div class="drop-down">
+                <div data-simplebar class="drop-down__simple">
+              <ul class="list-reset">
+                <li class="drop-down__item carra">
                   <a href="" class="drop-down__link">Карра</a>
                 </li>
-                <li class="drop-down__item pratella" tabindex="0">
+                <li class="drop-down__item pratella">
                   <a href="" class="drop-down__link">Прателла</a>
                 </li>
-                <li class="drop-down__item severini" tabindex="0">
+                <li class="drop-down__item severini">
                   <a href="" class="drop-down__link">Северини</a>
                 </li>
-                <li class="drop-down__item balla" tabindex="0">
+                <li class="drop-down__item balla">
                   <a href="" class="drop-down__link">Балла</a>
                 </li>
               </ul>
+                </div>
+              </div>
             </li>
           </ul>
           <form class="header__search flex">
@@ -354,7 +378,7 @@
                 <option value="">Скульптура</option>
               </select>
               <form class="gallery__checkbox">
-                <div class="gallery__checkbox-wrap descr" tabindex="0">
+                <div class="gallery__checkbox-wrap descr">
                   <input
                     class="gallery__checkbox-choice"
                     type="checkbox"
@@ -362,7 +386,7 @@
                     id="checkbox1"/>
                   <label for="checkbox1">XIX век</label>
                 </div>
-                <div class="gallery__checkbox-wrap descr" tabindex="0">
+                <div class="gallery__checkbox-wrap descr">
                   <input
                     class="gallery__checkbox-choice"
                     type="checkbox"
@@ -370,7 +394,7 @@
                     id="checkbox2"/>
                   <label for="checkbox2">XX век</label>
                 </div>
-                <div class="gallery__checkbox-wrap descr" tabindex="0">
+                <div class="gallery__checkbox-wrap descr">
                   <input
                     class="gallery__checkbox-choice"
                     type="checkbox"
@@ -385,11 +409,20 @@
                 <div class="gallery__nav flex">
                   <button
                     class="gallery__button-prev btn"
-                    tabindex="0"></button>
+                    tabindex="0"><svg width="30" height="30" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill=""/>
+                      <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke=""/>
+                      <path d="M16 20L11 15L16 10" stroke="white"/>
+                      </svg></button>
                   <div class="swiper-pagination"></div>
                   <button
                     class="gallery__button-next btn"
-                    tabindex="0"></button>
+                    tabindex="0"><svg width="30" height="30" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill=""/>
+                      <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke=""/>
+                      <path d="M14 20L19 15L14 10" stroke="white"/>
+                      </svg>
+                      </button>
                 </div>
                 <div class="gallery__container-slides swiper-wrapper">
                   <button class="swiper-slide gallery__swiper-active btn">
@@ -584,7 +617,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="5">
                   <img
@@ -598,7 +631,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="6">
                   <img
@@ -612,7 +645,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="7">
                   <img
@@ -626,7 +659,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="8">
                   <img
@@ -640,7 +673,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="9">
                   <img
@@ -654,7 +687,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="10">
                   <img
@@ -668,7 +701,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="11">
                   <img
@@ -682,7 +715,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li
                   class="catalog__painter-descr catalog__painter-descr--active"
@@ -720,7 +753,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="14">
                   <img
@@ -734,7 +767,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="15">
                   <img
@@ -748,7 +781,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="16">
                   <img
@@ -762,7 +795,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="17">
                   <img
@@ -776,7 +809,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="18">
                   <img
@@ -790,7 +823,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="19">
                   <img
@@ -804,7 +837,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="20">
                   <img
@@ -818,7 +851,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="21">
                   <img
@@ -832,7 +865,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="22">
                   <img
@@ -846,7 +879,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="23">
                   <img
@@ -860,7 +893,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
                 <li class="catalog__painter-descr" data-target="24">
                   <img
@@ -874,7 +907,7 @@
                     Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее
                     есть на&nbsp;что посмотреть!
                   </p>
-                  <a href="#" class="catalog__painter-link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__painter-link">В&nbsp;галерею</a>
                 </li>
               </ul>
             </div>
@@ -1032,7 +1065,7 @@
                           А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти
                           что-то интересное для себя
                         </p>
-                        <a href="#" class="catalog__painter-link"
+                        <a href="#gallery" class="catalog__painter-link"
                           >В&nbsp;галерею</a
                         >
                       </div>
@@ -1057,7 +1090,7 @@
                           А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти
                           что-то интересное для себя
                         </p>
-                        <a href="#" class="catalog__painter-link"
+                        <a href="#gallery" class="catalog__painter-link"
                           >В&nbsp;галерею</a
                         >
                       </div>
@@ -1082,7 +1115,7 @@
                           А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти
                           что-то интересное для себя
                         </p>
-                        <a href="#" class="catalog__painter-link"
+                        <a href="#gallery" class="catalog__painter-link"
                           >В&nbsp;галерею</a>
                       </div>
                     </div>
@@ -1106,7 +1139,7 @@
                           А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти
                           что-то интересное для себя
                         </p>
-                        <a href="#" class="catalog__painter-link"
+                        <a href="#gallery" class="catalog__painter-link"
                           >В&nbsp;галерею</a>
                       </div>
                     </div>
@@ -1130,7 +1163,7 @@
                           А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти
                           что-то интересное для себя
                         </p>
-                        <a href="#" class="catalog__painter-link"
+                        <a href="#gallery" class="catalog__painter-link"
                           >В&nbsp;галерею</a>
                       </div>
                     </div>
@@ -1154,7 +1187,7 @@
                           А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти
                           что-то интересное для себя
                         </p>
-                        <a href="#" class="catalog__painter-link"
+                        <a href="#gallery" class="catalog__painter-link"
                           >В&nbsp;галерею</a>
                       </div>
                     </div>
@@ -1169,8 +1202,17 @@
         <div class="container">
           <h2 class="developments__title title">События</h2>
           <div class="developments__buttons">
-            <button class="developments__button-prev btn"></button>
-            <button class="developments__button-next btn"></button>
+            <button class="developments__button-prev btn"><svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" fill=""/>
+              <path d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" stroke=""/>
+              <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"/>
+              </svg></button>
+            <button class="developments__button-next btn"><svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" fill=""/>
+              <path d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" stroke=""/>
+              <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"/>
+              </svg>
+              </button>
           </div>
           <div class="developments__slide swiper">
             <div class="developments__list swiper-wrapper flex">
@@ -1344,25 +1386,18 @@
             до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает
             их&nbsp;статус бесполезности. Прежде всего, постоянное
             информационно-пропагандистское
-            <span class="project__marker" tabindex="0">
-              <span class="project__popup">
-                "Пример современных тенденций&nbsp;&mdash; современная
-                методология разработки"</span>
+            <span class="project__marker" data-tippy-content="Пример современных тенденций - современная
+            методология разработки" tabindex="0">
             </span>
             обеспечение нашей деятельности однозначно фиксирует необходимость
             экономической целесообразности принимаемых решений. И&nbsp;нет
             сомнений, что действия представителей оппозиции могут быть
             рассмотрены
-
-            <span class="project__marker" tabindex="0">
-              <span class="project__popup"
-                >"Приятно, граждане, наблюдать, как сделанные на&nbsp;базе
-                аналитики выводы вызывают у&nbsp;вас эмоции"</span>
+            <span class="project__marker" data-tippy-content="Приятно, граждане, наблюдать, как сделанные на&nbsp;базе
+            аналитики выводы вызывают у&nbsp;вас эмоции" tabindex="0">
             </span>
             исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых
-            <span class="project__marker" tabindex="0">
-              <span class="project__popup"
-                >"В&nbsp;стремлении повысить качество"</span>
+            <span class="project__marker" data-tippy-content="В&nbsp;стремлении повысить качество" tabindex="0">
             </span>
             предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также
             представители современных социальных резервов призывают нас
@@ -1379,7 +1414,12 @@
           <div class="project__partners">
             <button
               class="project__button-prev btn"
-              aria-label="Предыдущий слайд"></button>
+              aria-label="Предыдущий слайд"><svg width="30" height="30" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"/>
+                <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke=""/>
+                <path d="M16 20L11 15L16 10" stroke="black"/>
+                </svg>
+                </button>
             <div class="project__slider swiper">
               <div class="swiper-wrapper">
                 <div class="project__slider-partners swiper-slide">
@@ -1449,7 +1489,11 @@
             </div>
             <button
               class="project__button-next btn"
-              aria-label="Следующий слайд"></button>
+              aria-label="Следующий слайд"><svg width="30" height="30" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"/>
+                <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke=""/>
+                <path d="M14 20L19 15L14 10" stroke="black"/>
+                </svg></button>
           </div>
         </div>
       </section>
@@ -1580,6 +1624,8 @@
         </div>
       </footer>
     </main>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="./libs/just-validate.min.js"></script>
     <script src="./libs/inputmask.min.js"></script>
     <script src="./libs/accordion.min.js"></script>

@@ -18,9 +18,56 @@
   .developments__item {
     align-items: center;
   }
+
+  .showroom__part1 {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 1440px) {
+  .header__menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+  .hero .swiper-slide:nth-child(1) {
+    background-image: url(../img/birmingham-museums-1-1024.png);
+    background-repeat: no-repeat;
+  }
+  .hero .swiper-slide:nth-child(2) {
+    background-image: url(../img/birmingham-museums-2-1024.png);
+    background-repeat: no-repeat;
+  }
+  .hero .swiper-slide:nth-child(3) {
+    background-image: url(../img/birmingham-museums-3-1024.png);
+    background-repeat: no-repeat;
+  }
+
+  .accordion__content-list {
+    column-count: 2;
+  }
+
+  .catalog__plug-border {
+    width: 189px;
+    height: 130px;
+  }
+
+  .catalog__img-plug {
+    margin: 6px;
+    width: 173px;
+    height: 114px;
+  }
+
+  .catalog__descr-plug {
+    width: 100%;
+  }
+
+  .showroom__button {
+    margin-right: 0;
+    padding: 10px 41px;
+  }
+}
+
+@media (max-width: 1200px) {
   .header__menu {
     display: none;
   }
@@ -163,9 +210,19 @@
   }
 
   .header__search-2 {
+    display: flex;
     position: absolute;
     right: 0;
+    visibility: hidden;
+    transform: translateY(-100px);
+transition: transform .4s ease-in-out, visibility .4s ease-in-out;
   }
+
+  .header__search-2--active {
+    visibility: visible;
+    transform: translateY(0);
+  }
+
 
   input[type="text"] {
     color: var(--white);
@@ -181,48 +238,11 @@
 
   .svg-closed {
     margin-right: 50px;
-  }
-
-  .hero .swiper-slide:nth-child(1) {
-    background-image: url(../img/birmingham-museums-1-1024.png);
-    background-repeat: no-repeat;
-  }
-  .hero .swiper-slide:nth-child(2) {
-    background-image: url(../img/birmingham-museums-2-1024.png);
-    background-repeat: no-repeat;
-  }
-  .hero .swiper-slide:nth-child(3) {
-    background-image: url(../img/birmingham-museums-3-1024.png);
-    background-repeat: no-repeat;
-  }
-
-  .accordion__content-list {
-    column-count: 2;
-  }
-
-  .catalog__plug-border {
-    width: 189px;
-    height: 130px;
-  }
-
-  .catalog__img-plug {
-    margin: 6px;
-    width: 173px;
-    height: 114px;
-  }
-
-  .catalog__descr-plug {
-    width: 100%;
-  }
-
-  .showroom__button {
-    margin-right: 0;
-    padding: 10px 41px;
-  }
+}
 }
 
 @media (max-width: 1024px) {
-  .header__navigation {
+    .header__navigation {
     padding-top: 29px;
     padding-bottom: 24px;
   }
@@ -270,7 +290,7 @@
   }
 
   .gallery {
-    padding-bottom: 80px;
+    padding-bottom: 77px;
   }
 
   .gallery__filter {
@@ -361,11 +381,11 @@
 
   .project {
     padding-top: 68px;
-    padding-bottom: 69px;
+    padding-bottom: 77px;
   }
 
   .project__desc {
-    width: 99%;
+    width: 100%;
   }
 
   .project__slider {
@@ -404,7 +424,16 @@
     width: 195px;
   }
 
+  .project__button-prev {
+    top: 48px;
+  }
+
+  .project__button-next {
+    top: 48px;
+  }
+
   .showroom {
+    padding-top: 41px;
     padding-bottom: 4px;
   }
 
@@ -416,10 +445,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-  }
-
-  .showroom__part1 {
-    margin-bottom: 30px;
   }
 
   .showroom__connect {
@@ -504,6 +529,10 @@
 
   .gallery__nav {
     margin-top: 41px;
+  }
+
+  .choices__list--dropdown, .choices__list[aria-expanded] {
+    background-color: black;
   }
 
   .catalog {
@@ -617,6 +646,10 @@
   .developments__content {
     padding: 13px 34px 55px;
   }
+
+  .showroom__form-tel {
+    margin-right: 0;
+  }
   }
 
 @media (max-width: 600px) {
@@ -719,7 +752,7 @@
   }
   .gallery {
     padding-top: 50px;
-    padding-bottom: 21px;
+    padding-bottom: 18px;
   }
 
   .gallery__filter {
@@ -862,7 +895,7 @@
   }
 
   .project__desc {
-    margin-bottom: 19px;
+    margin-bottom: 49px;
   }
 
   .project__slider {

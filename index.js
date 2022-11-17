@@ -22,7 +22,7 @@ const hero_swiper = new Swiper('.hero__swiper', {
 })
 
 const swiper = new Swiper('.project__slider', {
-  loop: true,
+  loop: false,
   slidesPerView: 1,
   spaceBetween: 15,
   navigation: {
@@ -70,7 +70,7 @@ const element = document.querySelector('select');
   const choices = new Choices(element, {
     searchEnabled: false,
   });
-
+choices.showDropdown();
 
   const swipe = new Swiper('.gallery__img', {
     slidesPerView: 1,
@@ -126,6 +126,7 @@ const element = document.querySelector('select');
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
+      clickable: 'true',
     },
     a11y: {
       prevSlideMessage: 'перейти к слайду',
@@ -262,22 +263,26 @@ menuLinks.forEach(function(el) {
   })
 })
 
-let input = document.querySelector('.header__search-2');
-let svg = document.querySelector('.header__svg');
-let svgClosed = document.querySelector('.button-closed')
+let headerSearch = document.querySelector('.header__search-2');
+let headerSvg = document.querySelector('.header__svg');
+let buttonClosed = document.querySelector('.button-closed')
 
-svg.addEventListener('click',
+headerSvg.addEventListener('click',
 
 function() {
 
-  input.classList.remove('hidden');
-  svg.classList.add('visibility-hidden');
+  headerSearch.classList.add('header__search-2--active');
+  headerSvg.classList.add('visibility-hidden');
 })
 
-svgClosed.addEventListener('click', function(el) {
-  input.classList.add('hidden');
-  svg.classList.remove('visibility-hidden');
+buttonClosed.addEventListener('click', function(el) {
+  headerSearch.classList.remove('header__search-2--active');
+  headerSvg.classList.remove('visibility-hidden');
 })
-input.addEventListener('submit', function(e){
+headerSearch.addEventListener('submit', function(e){
 e.preventDefault()
 })
+
+tippy('[data-tippy-content]', {
+  arrow: true,
+});
