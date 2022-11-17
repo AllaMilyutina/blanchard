@@ -70,7 +70,6 @@ const element = document.querySelector('select');
   const choices = new Choices(element, {
     searchEnabled: false,
   });
-choices.showDropdown();
 
   const swipe = new Swiper('.gallery__img', {
     slidesPerView: 1,
